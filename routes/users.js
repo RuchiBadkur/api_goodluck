@@ -8,10 +8,11 @@ router.get('/allusers', async(req, res) => {
     try {
         const response = await db.promise().query('SELECT * FROM usersinfo');
         console.log(response[0]);
-        res.status(200).json(response);
+        res.status(200).json(response[0]);
     } catch (error) {
-        res.status(400).json(err);
+        res.status(400).json(error);
     }
 })
+
 
 module.exports = router;

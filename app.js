@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 const cors = require('cors');
-require("dotenv").config({ path: ".env" }); 
+// require("dotenv").config({ path: ".env" }); 
 
 app.use(express.json());
 
@@ -21,5 +21,5 @@ app.get('/', (req, res) => {
 const usersRoute = require('./routes/users');
 app.use('/users', usersRoute);
 
-// app.listen(4000);
-app.listen(process.env.APP_PORT);
+app.listen(4000);
+// app.listen(process.env.APP_PORT);
