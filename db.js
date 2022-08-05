@@ -1,8 +1,8 @@
-const mysql = require('mysql2');
+// const mysql = require('mysql2');
 
-module.exports = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password:  'newpassword', 
-    database: 'online_exam'
-});
+// module.exports = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password:  'newpassword', 
+//     database: 'online_exam'
+// });
